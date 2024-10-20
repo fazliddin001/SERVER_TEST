@@ -1,0 +1,124 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Delicious Coffee</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h1>Delicious Coffee</h1>
+        </div>
+        <ul>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Delicious Coffee</h1>
+            <p>Your favorite place to enjoy a perfect cup of coffee.</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Espresso</h3>
+            <p>A rich and bold coffee experience.</p>
+            <span class="price">$3.00</span>
+        </div>
+        <div class="menu-item">
+            <h3>Latte</h3>
+            <p>A creamy blend of espresso and steamed milk.</p>
+            <span class="price">$4.00</span>
+        </div>
+        <div class="menu-item">
+            <h3>Cappuccino</h3>
+            <p>Perfectly balanced espresso, steamed milk, and foam.</p>
+            <span class="price">$4.50</span>
+        </div>
+        <div class="menu-item">
+            <h3>Americano</h3>
+            <p>Espresso with hot water for a bold flavor.</p>
+            <span class="price">$3.50</span>
+        </div>
+        <div class="menu-item">
+            <h3>Mocha</h3>
+            <p>A delightful mix of chocolate and coffee.</p>
+            <span class="price">$4.50</span>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Delicious Coffee, we are passionate about coffee. Our mission is to provide you with the best coffee experience possible. We source our beans from the finest growers around the world and roast them to perfection.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="{% static 'coffee1.jpg' %}" alt="Coffee Image 1">
+            <img src="{% static 'coffee2.jpg' %}" alt="Coffee Image 2">
+            <img src="{% static 'coffee3.jpg' %}" alt="Coffee Image 3">
+            <img src="{% static 'coffee4.jpg' %}" alt="Coffee Image 4">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <blockquote>
+                <p>"The best coffee in town! I come here every morning."</p>
+                <footer>- Sarah Johnson</footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p>"A cozy place with amazing coffee and friendly staff!"</p>
+                <footer>- Mark Lee</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Delicious Coffee. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
